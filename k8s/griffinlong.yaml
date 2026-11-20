@@ -1,0 +1,72 @@
+# Deployed to ~/k8s/griffinlong.yaml on homeserver.
+# Image built by .github/workflows/build.yml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: griffinlong
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: griffinlong
+  namespace: griffinlong
+  labels: { app: griffinlong }
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: griffinlong }
+  template:
+    metadata:
+      labels: { app: griffinlong }
+    spec:
+      containers:
+        - name: griffinlong
+          image: ghcr.io/jglong2/griffinlong.com:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet: { path: /, port: 80 }
+          resources:
+            requests: { cpu: 10m, memory: 16Mi }
+            limits: { memory: 64Mi }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: griffinlong
+  namespace: griffinlong
+spec:
+  selector: { app: griffinlong }
+  ports:
+    - port: 80
+      targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: griffinlong
+  namespace: griffinlong
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: griffinlong.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: griffinlong
+                port:
+                  number: 80
+    - host: www.griffinlong.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: griffinlong
+                port:
+                  number: 80
