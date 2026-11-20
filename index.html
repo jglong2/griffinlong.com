@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griffin Long</title>
+    <link rel="icon" type="image/png" href="./Resources/Images/red planet favicon.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pN7N6jIeHz"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./Resources/Styles/GriffinLongPage.css">
+</head>
+<body class="has-loader">
+    <!-- Loading Screen -->
+    <div class="loader-overlay" id="loader-overlay">
+        <div class="loader-wrapper" id="loader-wrapper">
+            <span class="loader-letter">L</span>
+            <span class="loader-letter">o</span>
+            <span class="loader-letter">a</span>
+            <span class="loader-letter">d</span>
+            <span class="loader-letter">i</span>
+            <span class="loader-letter">n</span>
+            <span class="loader-letter">g</span>
+            <div class="loader"></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top futuristic-nav">
+        <div class="container-fluid px-4">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="gooey-nav-container">
+                    <nav>
+                        <ul>
+                            <li class="active">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#education">Education</a>
+                            </li>
+                            <li>
+                                <a href="#experience">Experience</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#expertise">Expertise</a>
+                            </li>
+                            <li>
+                                <a href="#toolbox">Toolbox</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <span class="effect filter"></span>
+                    <span class="effect text"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5 mt-5">
+        <div class="container-fluid px-0">
+            <div class="row g-0">
+                <div class="col-lg-6 col-md-6">
+                    <div class="hero-intro">
+                        <h2 class="fw-bold mb-3 hero-greeting">
+                            <span
+                              class="decrypted-text hero-greeting-line"
+                              data-text="Hello! I'm "
+                              data-animate-on="view"
+                              data-reveal-direction="left"
+                            ></span>
+                            <span
+                              class="decrypted-text hero-greeting-line text-danger"
+                              data-text="Griffin Long"
+                              data-red-start="0"
+                              data-animate-on="view"
+                              data-reveal-direction="left"
+                            ></span>
+                        </h2>
+                        <p class="mb-3 text-muted" style="font-family: 'Courier New', monospace;">
+                            A Passionate <strong class="text-danger">Entrepreneur & Technical Developer</strong>
+                        </p>
+                        <p class="mb-0 text-muted small" style="font-family: 'Courier New', monospace;">
+                            I create curated solutions with a specialization in full stack web development and business strategy.
+                        </p>
+                        <div class="mt-4">
+                            <a
+                              class="resume-btn"
+                              id="downloadResumeBtn"
+                              href="./Resources/Files/LongGriffinResumev7.pdf"
+                              download="LongGriffinResumev7.pdf"
+                              role="button"
+                            >
+                              Download Resume
+                            </a>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/jgriffinlong" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                                <i class="bi bi-linkedin" style="font-size: 2rem; color: #dc3545;"></i>
+                            </a>
+                            <a href="https://github.com/jglong2" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                                <i class="bi bi-github" style="font-size: 2rem; color: #dc3545;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="hero-photo">
+                        <div class="profile-image-wrapper-full">
+                            <img src="./Resources/Images/DSC02615.JPG" alt="Griffin Long" class="profile-image-full">
+                            <div class="profile-glow-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="chroma-grid" style="--r: 300px;">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="content-card slide-in-left">
+                        <h2 class="section-title mb-4">About me</h2>
+                        <h3 class="h5 mb-4 text-muted hover-red" data-text="A Student Leader with a passion for learning and applying new and current technologies.">A Student Leader with a passion for learning and applying new and current technologies.</h3>
+                        <p class="mb-0">
+                            I'm a Student at the University of Alabama studying Management Information Systems with a Minor in Sales. I was born and raised in Memphis, Tennessee and am pursuing a Bachelor's degree with a concentration in business technology. Every day I challenge myself to learn something new. I love to give back to my community by helping others learn and grow. My main goals are to leverage technology to solve real-world problems and create new business opportunities for myself and others.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chroma-overlay"></div>
+                <div class="chroma-fade"></div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Education & Skills Section -->
+    <section id="education" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title mb-5">Education</h2>
+            <div class="chroma-grid" style="--r: 300px;">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="content-card slide-in-left">
+                            <div class="education-card-inner">
+                                <div class="education-logo-wrapper">
+                                    <div class="box-area">
+                                        <div class="box front-box"></div>
+                                        <div class="box front-middle-box"></div>
+                                        <div class="box right-box"></div>
+                                        <div class="box back-middle-box"></div>
+                                        <div class="box back-box"></div>
+                                        <div class="box left-box"></div>
+                                        <div class="box top-box"></div>
+                                        <div class="box bottom-box"></div>
+                                    </div>
+                                </div>
+                                <div class="education-content">
+                                    <p class="text-muted small mb-1">August 2023 - May 2027</p>
+                                    <h4 class="h5 fw-bold mb-2">Bachelor's of Science in Management Information Systems</h4>
+                                    <p class="text-muted mb-3">The University of Alabama</p>
+                                    <p class="mb-1"><span class="text-danger fw-semibold">GPA:</span> 3.6 (Undergrad)</p>
+                                    <p class="mb-3"><span class="text-danger fw-semibold">Graduation:</span> May 2027</p>
+                                    <div class="education-item">
+                                        <p class="text-muted small mb-1">Honors & Activities</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>MIS Ambassadors Social Media Chair</li>
+                                            <li>The VERB Kind</li>
+                                            <li>Alabama Information Management Society (AIMS)</li>
+                                            <li>President's List</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chroma-overlay"></div>
+                <div class="chroma-fade"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">Experience</h2>
+            <div class="chroma-grid" style="--r: 300px;">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                <!-- Experience 1 - Most Recent -->
+                <div class="col">
+                    <div class="experience-card h-100 slide-in-left">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Clothing Brand Founder</h4>
+                                <p class="text-muted mb-2">Eternal Bliss Streetwear | Memphis, TN | May 2023 – Present</p>
+                            </div>
+                        </div>
+                        <ul class="experience-list">
+                            <li>I have managed all facets of the business, including supply chain logistics, manufacturing, and order fulfillment. I created and executed a self-motivated marketing strategy to build brand identity, significantly grow the customer base, and drive demand for new product lines. Furthermore, I utilized data-driven business analysis and sales forecasting to effectively manage inventory, optimize marketing campaigns, and increase profitability.</li>
+    </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="col">
+                    <div class="experience-card h-100 slide-in-left">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Head Lifeguard</h4>
+                                <p class="text-muted mb-2">Germantown Athletic Club | Germantown, TN | May 2023 – Present</p>
+                            </div>
+                        </div>
+                        <ul class="experience-list">
+                            <li>I have served as Head Lifeguard, managing a team of 7 lifeguards to ensure the safety of over 400 daily patrons. During this time, I have mentored new staff, improving team performance and adherence to safety standards.</li>
+    </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="col">
+                    <div class="experience-card h-100 slide-in-left">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Founder/Owner</h4>
+                                <p class="text-muted mb-2">901_grails | Memphis, TN | October 2022 – Present</p>
+                            </div>
+                        </div>
+                        <ul class="experience-list">
+                            <li>Founder and operator of 901_grails, a hybrid reselling business focused on vintage clothes. Source, price, and market products through online platforms such as Depop, Grailed, Instagram, eBay, and in-person markets. Handle inventory, customer service, social media, promotion, and all aspects of day-to-day business operations.</li>
+    </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="col">
+                    <div class="experience-card h-100 slide-in-left">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Personal Swim Instructor</h4>
+                                <p class="text-muted mb-2">Germantown Athletic Club | Germantown, TN | August 2021 – Present</p>
+                            </div>
+                        </div>
+                        <ul class="experience-list">
+                            <li>As a Personal Swim Instructor, I analyzed hundreds of individual skill sets to design and adapt custom lessons to optimize performance and accelerate skill development for a diverse range of students.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="col">
+                    <div class="experience-card h-100 slide-in-left">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Elementary/Middle School Tutor</h4>
+                                <p class="text-muted mb-2">The Brown House | Northport, AL | August 2023 – September 2024</p>
+                            </div>
+                        </div>
+                        <p>Teaching effective study techniques to improve comprehension and retention. Building meaningful relationships with students to boost motivation and self-esteem. Inspiring a love for learning by making lessons engaging and accessible.</p>
+                    </div>
+                </div>
+
+                <!-- Experience 6 -->
+                <div class="col">
+                    <div class="experience-card h-100 slide-in-left">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Track and Field Coach</h4>
+                                <p class="text-muted mb-2">Houston Middle School | Germantown, TN | January 2021 – April 2023</p>
+                            </div>
+                        </div>
+                        <p>Develop skills for 25 elementary and middle school athletes while teaching how to properly high jump and adjust techniques for competition. Inspire young athletes to achieve their potential by teaching discipline and a positive mindset. Provide individualized feedback to help athletes refine their techniques. Develop structured training sessions that focused on strength, flexibility, and technique.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="chroma-overlay"></div>
+                <div class="chroma-fade"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">Projects</h2>
+            <div class="chroma-grid" style="--r: 300px;">
+                <!-- New Project: BioISAC -->
+                <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="experience-card slide-in-left mb-5">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">BioISAC Threat Intelligence Platform</h4>
+                                <p class="text-muted mb-2">Developer | Oct 2025 – Dec 2025</p>
+                            </div>
+                        </div>
+                        <p class="mb-3">
+                            A platform that integrates multiple APIs to collect and prioritize cyber threats, generate confidence ratings for urgency levels, and recommend response actions for the bioeconomy. It even evaluates user qualifications to ensure alerts reach those who truly need access.
+                        </p>
+                        <p class="mb-4">
+                            <strong class="text-danger">Features:</strong> Tier-1 Threat Intelligence Platform aggregating vulnerability data from OTX and NIST. Integrated Google Gemini 2.5 Flash to automatically analyze and summarize complex threat reports, reducing analyst fatigue. Robust security including Role-Based Access Control and Two-Factor Authentication via OtpNet.
+                        </p>
+                        <div class="mb-3" style="margin-top: 2rem;">
+                            <div class="skills-grid" style="gap: 0.75rem; display: flex; flex-wrap: wrap;">
+                                <div class="skill-badge">.Net 9</div>
+                                <div class="skill-badge">MySQL</div>
+                                <div class="skill-badge">Google Gemini API</div>
+                                <div class="skill-badge">C#</div>
+                                <div class="skill-badge">JavaScript</div>
+                                <div class="skill-badge">RBAC</div>
+                                <div class="skill-badge">2FA</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Previous First Project -->
+                <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="experience-card slide-in-left mb-5">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Mississippi Quality Education Platform</h4>
+                                <p class="text-muted mb-2">Association for Information Systems (AIS) Software Innovation Competition | September 2025 – November 2025</p>
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex flex-wrap gap-2 align-items-center">
+                            <span class="badge px-3 py-2" style="font-size: 0.875rem; color: #FFD700; background-color: transparent; border: none;">
+                                <i class="bi bi-trophy-fill" style="color: #FFD700; margin-right: 0.75rem;"></i>1st Place - AIS
+                            </span>
+                            <span class="badge px-3 py-2" style="font-size: 0.875rem; color: #FFD700; background-color: transparent; border: none;">
+                                <i class="bi bi-star-fill" style="color: #FFD700; margin-right: 0.75rem;"></i>Student Choice Award - AIS
+                            </span>
+                        </div>
+                        <p class="mb-3">
+                            The Mississippi Quality Education Platform is a free, AI-powered web application designed to close the K–12 education gap across Mississippi. The platform provides interactive resources, videos, guided learning paths, and certification opportunities for students and young adults, helping users learn through understanding, not memorization. This project won 1st Place and the Student Choice Award in the Association for Information Systems (AIS) Software Innovation Competition, focusing on the United Nations Sustainability Goal of Quality Education.
+                        </p>
+                        <p class="mb-4">
+                            <strong class="text-danger">Features:</strong> CRUD endpoints for resources, videos, certifications, and learning paths; personalized AI chat; certification tracking. This project demonstrates how Information Systems and AI can work together to make education more personalized, accessible, and equitable for all students.
+                        </p>
+                        <div class="mb-3" style="margin-top: 2rem;">
+                            <div class="skills-grid" style="gap: 0.75rem; display: flex; flex-wrap: wrap;">
+                                <div class="skill-badge">.NET 8.0</div>
+                                <div class="skill-badge">REST API</div>
+                                <div class="skill-badge">JavaScript</div>
+                                <div class="skill-badge">CSS</div>
+                                <div class="skill-badge">Gemini API</div>
+                                <div class="skill-badge">SQLite</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="experience-card slide-in-left mb-5">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Alabama Nutrition Hub App</h4>
+                                <p class="text-muted mb-2">Developer & Project Manager | September 2025 – October 2025</p>
+                            </div>
+                        </div>
+                        <p class="mb-3">
+                            The Alabama Nutrition Hub App is a comprehensive full nutrition platform designed to revolutionize the student dining experience and support personal wellness at the University of Alabama. The platform centralizes nutritional information for on-campus dining and empowers users to manage their diet through personalized goal tracking, macro monitoring, and a Food Diary. I managed the entire project lifecycle, demonstrating end-to-end technical proficiency from concept to deployment.
+                        </p>
+                        <p class="mb-4">
+                            <strong class="text-danger">Features:</strong> The platform's core capabilities include CRUD (Create, Read, Update, Delete) endpoints for efficient data handling, supporting the personalized tracking of nutritional goals and macronutrients for every day. Key user-facing tools are the intuitive Food Diary and a comprehensive Nutritional Dashboard. Additionally, users can contribute to the platform by adding and sharing recipes to a communal foods database.
+                        </p>
+                        <div class="mb-3" style="margin-top: 2rem;">
+                            <div class="skills-grid" style="gap: 0.75rem; display: flex; flex-wrap: wrap;">
+                                <div class="skill-badge">HTML</div>
+                                <div class="skill-badge">CSS</div>
+                                <div class="skill-badge">JavaScript</div>
+                                <div class="skill-badge">C#</div>
+                                <div class="skill-badge">SQLite</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="experience-card slide-in-left mb-0">
+                        <div class="experience-header">
+                            <div class="experience-title-section">
+                                <h4 class="h5 fw-bold mb-1">Freelance Music - Music Lesson Booking Platform</h4>
+                                <p class="text-muted mb-2">Full-Stack Web Developer | September 2025 – October 2025</p>
+                            </div>
+                        </div>
+                        <p class="mb-3">
+                            The Freelance Music platform is a comprehensive, full-stack web application engineered to connect music students with freelance teachers, streamlining the process of lesson scheduling, booking management, and payment processing. Serving three distinct user roles (Student, Teacher, and Administrator), the application is built for scalability and financial accuracy, ensuring a seamless operational flow from lesson posting to completed payment.
+                        </p>
+                        <p class="mb-4">
+                            <strong class="text-danger">Features:</strong> The platform's core includes Multi-role Authentication and Role-based Access Control (Admin, Teacher, Student) for secure user management. Key operational features include Lesson Management (Teacher posting, flexible scheduling, custom rates), Robust Booking System supporting one-time and recurring lessons, Financial Management for tracking payments, account balances, and automated rate calculations, Administrative Features providing full system oversight, user management, and System Analytics using Chart.js for data visualization.
+                        </p>
+                        <div class="mb-3" style="margin-top: 2rem;">
+                            <div class="skills-grid" style="gap: 0.75rem; display: flex; flex-wrap: wrap;">
+                                <div class="skill-badge">ASP.NET Core</div>
+                                <div class="skill-badge">C#</div>
+                                <div class="skill-badge">.NET 8.0</div>
+                                <div class="skill-badge">REST API</div>
+                                <div class="skill-badge">HTML5</div>
+                                <div class="skill-badge">CSS</div>
+                                <div class="skill-badge">JavaScript</div>
+                                <div class="skill-badge">Bootstrap 5</div>
+                                <div class="skill-badge">SQLite</div>
+                                <div class="skill-badge">Chart.js</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="chroma-overlay"></div>
+                <div class="chroma-fade"></div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title mb-5">Expertise</h2>
+            <div class="chroma-grid" style="--r: 300px;">
+                <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="expertise-card slide-in-left">
+                        <h4 class="h5 fw-bold mb-3 text-danger">Front-end Web Development</h4>
+                        <p>I specialize in front-end web development, emphasizing the creation of visually appealing and interactive website elements that respond dynamically to user actions. Proficient in HTML, JavaScript, and CSS, I often leverage frameworks like Bootstrap to enhance the efficiency of the development process.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="expertise-card slide-in-left">
+                        <h4 class="h5 fw-bold mb-3 text-danger">Back-end Web Development</h4>
+                        <p>I routinely leverage systems such as ASP.NET MVC and C# to adeptly handle user requests, execute intricate business logic, and seamlessly interact with databases. My specialization revolves around relational databases, particularly emphasizing SQL for robust data management.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="expertise-card slide-in-left">
+                        <h4 class="h5 fw-bold mb-3 text-danger">Business Strategy & Entrepreneurship</h4>
+                        <p>I combine technical skills with business acumen, having founded and scaled a clothing brand. I utilize data-driven analysis, sales forecasting, and strategic marketing to drive business growth and optimize operations. My experience includes supply chain management, inventory optimization, and customer relationship management.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="chroma-overlay"></div>
+                <div class="chroma-fade"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toolbox Section -->
+    <section id="toolbox" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title mb-5">Toolbox</h2>
+            <div class="chroma-grid" style="--r: 300px;">
+                <div class="content-card slide-in-left" style="padding: 3.5rem;">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <p class="mb-5 pt-3 pb-4">A curated mix of languages, platforms, and services that power my recent work.</p>
+                            <div class="skills-grid" style="gap: 1.5rem; margin-top: 2rem;">
+                                <div class="skill-badge">C#</div>
+                                <div class="skill-badge">JavaScript</div>
+                                <div class="skill-badge">MySQL</div>
+                                <div class="skill-badge">HTML</div>
+                                <div class="skill-badge">CSS</div>
+                                <div class="skill-badge">Database Design</div>
+                                <div class="skill-badge">Project Management</div>
+                                <div class="skill-badge">Visual Studio</div>
+                                <div class="skill-badge">Git</div>
+                                <div class="skill-badge">Adobe CC</div>
+                                <div class="skill-badge">MS Office Suite</div>
+                                <div class="skill-badge">Business Analysis</div>
+                                <div class="skill-badge">.NET</div>
+                                <div class="skill-badge">.NET 8.0</div>
+                                <div class="skill-badge">SQLite</div>
+                                <div class="skill-badge">REST API</div>
+                                <div class="skill-badge">HTML5</div>
+                                <div class="skill-badge">Bootstrap 5</div>
+                                <div class="skill-badge">Gemini API</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chroma-overlay"></div>
+                <div class="chroma-fade"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark border-top border-danger">
+        <div class="container text-center">
+            <p class="text-white-50 mb-0">&copy; 2026 Griffin Long. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i> Back to top
+    </button>
+
+    <!-- Bootstrap 5 JS bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/main.js"></script>
+    
+    <!-- Resume Download Handler -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadBtn = document.getElementById('downloadResumeBtn');
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', function(e) {
+                    // Allow default download behavior but prevent page navigation
+                    // The download attribute should handle it, but we intercept to use blob if needed
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const resumeUrl = this.getAttribute('href');
+                    const fileName = this.getAttribute('download');
+                    
+                    fetch(resumeUrl)
+                        .then(response => {
+                            if (!response.ok) throw new Error('Network response was not ok');
+                            return response.blob();
+                        })
+                        .then(blob => {
+                            // Create blob URL
+                            const blobUrl = window.URL.createObjectURL(blob);
+                            
+                            // Try to force download using a new anchor element
+                            const downloadLink = document.createElement('a');
+                            downloadLink.style.display = 'none';
+                            downloadLink.href = blobUrl;
+                            downloadLink.download = fileName;
+                            
+                            // Some browsers require the link to be in the DOM
+                            document.body.appendChild(downloadLink);
+                            
+                            // Trigger download
+                            downloadLink.click();
+                            
+                            // Clean up
+                            setTimeout(() => {
+                                document.body.removeChild(downloadLink);
+                                window.URL.revokeObjectURL(blobUrl);
+                            }, 100);
+                        })
+                        .catch(error => {
+                            console.error('Download error:', error);
+                            // Final fallback: open in new tab/window
+                            window.open(resumeUrl, '_blank');
+                        });
+                    
+                    return false;
+                }, { passive: false });
+            }
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        if (backToTopBtn) {
+            // Smooth scroll to top
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Show/hide button based on scroll position (only at very bottom of page)
+            function toggleBackToTopButton() {
+                const scrollPosition = window.innerHeight + window.scrollY;
+                const documentHeight = document.documentElement.scrollHeight;
+                const threshold = 50; // Show button only when within 50px of bottom
+                
+                // Only show if user has scrolled down significantly AND is near bottom
+                const hasScrolledDown = window.scrollY > 200; // Must scroll at least 200px first
+                const isNearBottom = documentHeight - scrollPosition < threshold;
+                
+                if (hasScrolledDown && isNearBottom) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            }
+
+            // Check on scroll
+            window.addEventListener('scroll', toggleBackToTopButton);
+            
+            // Don't check on page load - button should be hidden initially
+        }
+    </script>
+</body>
+</html>
